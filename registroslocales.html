@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html lang="es">
+    <head>
+        <meta charset = "utf-8">
+        <title>NightApp</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    </head>
+    <body>
+        <header>
+            <!-- barra de navegación -->
+             <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                         <a class="navbar-brand" href="#">NigthApp</a>
+                          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                          </button>
+                           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                           <ul class="navbar-nav bg-inverse">
+                               <li class="nav-item">
+                                    <a href="index.html" class="nav-link">Inicio</a>
+                                 </li>
+                                 <!-- Este boton tiene que aparecer si el usuario ya ingreso a su cuenta -->
+                                 <li id="registrolocal">
+                                     <a href="index.html" class="nav-link">Registrar local</a>
+                                 </li>
+                                 <li class="nav-item">
+                                     <a href="index.html" class="nav-link">Ayuda</a>
+                                 </li>
+                             </ul>
+                            </div>
+                        </nav>
+                         
+                    </div>
+                </div>
+              <!-- fin de barra de navegación -->
+             <!-- header -->
+                       
+                 <div class="row">
+                     <div class="col-12  header_NightApp">
+                     <p class="header_text">NigthApp</p>
+     
+                     </div>
+                 </div>
+                 <!-- fin de header -->
+             </div>
+             
+         </header>
+        <div class="container">
+            <section class="main row">
+                <div class="col-xs-12 col-sm-8 col-md-9">
+                    <h3>Registra tu local</h3>
+                    <hr>
+                    <form action="">
+                        <div class="form-group row">
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <label>Nombre del local
+                                    <br><input type="text" id="nombre_local"></input>
+                                </label>
+                            </div>            
+                            <div class="col-xs-12 col-sm-12 col-md-12"> <hr>
+                                <label>Localidad
+                                <br><Select name="lugar" class="form-control" id="lugar" placeholder="Ubicación dle local">
+                                    <option value="caba">CABA</option>
+                                    <option value="florenciovarela">Florencio Varela</option>
+                                    <option value="laplata">La Plata</option>
+                                    <option value="quilmes">Quilmes</option>
+                                    </Select>
+                                </label>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12"> 
+                                <label>Dirección del local
+                                    <br><input type="text" id="direccion_local" placeholder="123 e/ 59 y 52"></input> 
+                                </label>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12"><hr>
+                                    <label> Fotos del local<br>
+                                         <input name="uploadedfile" type="file" /><br></br>
+                                    </label>  
+                                </div>
+                           <div class="col-xs-12 col-sm-12 col-md-12">
+                                <label>Descripción del local
+                                    <br><textarea name="descripcion" maxlength="1000" placeholder="Escribe la descripción del local aqui." cols= "50"></textarea>
+                                </label>
+                           </div>
+                           
+                            <div class="col-md-12">
+                                <p>Categorías</p>
+                            </div>
+                            
+                            <div class="col-xs-12 col-sm-12 col-md-4"> <br>
+                                <div class="form-check-label">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" name="categoria_bar" id="categoria_bar" class="form-check-input mr-2">Bares
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4">  <br>     
+                                <div class="form-check-label">
+                                    <label  class="form-check-label">
+                                        <input type="checkbox" name="categoria_restaurante" id="categoria_restaurante" class="form-check-input mr-2">Restaurantes
+                                    </label>                      
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4"> <br>
+                                <div class="form-check-label">
+                                    <label  class="form-check-label">
+                                         <input type="checkbox" name="categoria_balialble" id="categoria_bar" class="form-check-input mr-2">Bailables
+                                    </label>                      
+                                </div>
+                            </div>
+                        </div>
+                        <br><input type="submit" value="Cargar local"></input>
+                    </form>
+                </div>
+            </section>
+        </div>
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    </body>
+</html>
