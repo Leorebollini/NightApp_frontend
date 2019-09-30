@@ -58,63 +58,75 @@
                     <form action="">
                         <div class="form-group row">
                             <div class="col-xs-12 col-sm-12 col-md-12">
-                                <label>Nombre del local
-                                    <br><input type="text" id="nombre_local"></input>
-                                </label>
+                                <div class="form-group">
+                                    <label for="nombre_local">Nombre del local</label>
+                                    <input type="text" class="form-control" id="nombre_local"></input> 
+                                </div>  
                             </div>            
-                            <div class="col-xs-12 col-sm-12 col-md-12"> <hr>
-                                <label>Localidad
-                                <br><Select name="lugar" class="form-control" id="lugar" placeholder="Ubicación dle local">
-                                    <option value="caba">CABA</option>
-                                    <option value="florenciovarela">Florencio Varela</option>
-                                    <option value="laplata">La Plata</option>
-                                    <option value="quilmes">Quilmes</option>
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <div class="form-group">
+                                    <label for="lugar">Localidad</label>
+                                    <br><Select name="lugar" class="form-control" id="lugar" placeholder="Ubicación del local">
+                                        <option value="caba">CABA</option>
+                                        <option value="florenciovarela">Florencio Varela</option>
+                                        <option value="laplata">La Plata</option>
+                                        <option value="quilmes">Quilmes</option>
                                     </Select>
-                                </label>
+                                </div> 
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-12"> 
-                                <label>Dirección del local
-                                    <br><input type="text" id="direccion_local" placeholder="123 e/ 59 y 52"></input> 
-                                </label>
+                                <div class="form-group">
+                                    <label for="direccion_local">Dirección del local</label>
+                                    <label for="direccion_local" class="sr-only">Ej: 123 e/ 59 y 52</label>
+                                    <input type="text" class="form-control" id="direccion_local" placeholder="123 e/ 59 y 52"></input>  
+                                </div>    
                             </div>
-                            <div class="col-xs-12 col-sm-12 col-md-12"><hr>
-                                    <label> Fotos del local<br>
-                                         <input name="uploadedfile" type="file" /><br></br>
-                                    </label>  
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <div class="form-group">
+                                    <label for="fotos_local"> Fotos del local</label>
+                                    <input name="uploadedfile" class="form-control" id="fotos_local" type="file" />
+                                    <p class="help-block">Maximo 50 MB</p>
                                 </div>
-                           <div class="col-xs-12 col-sm-12 col-md-12">
-                                <label>Descripción del local
-                                    <br><textarea name="descripcion" maxlength="1000" placeholder="Escribe la descripción del local aqui." cols= "50"></textarea>
-                                </label>
-                           </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <div class="form-group">
+                                    <label for="descripcion_local">Descripción del local</label>
+                                    <textarea name="descripcion" class="form-control" id="descripcion_local" maxlength="1000" placeholder="Escribe la descripción del local aqui." cols= "50"></textarea>
+                                </div>
+                            </div>
                            
                             <div class="col-md-12">
                                 <p>Categorías</p>
                             </div>
-                            
-                            <div class="col-xs-12 col-sm-12 col-md-4"> <br>
+                            <div class="col-xs-12 col-sm-12 col-md-4">
                                 <div class="form-check-label">
-                                    <label class="form-check-label">
-                                        <input type="checkbox" name="categoria_bar" id="categoria_bar" class="form-check-input mr-2">Bares
-                                    </label>
+                                    <div class="form-group">
+                                        <label class="form-check-label">
+                                        <input type="checkbox" name="categoria_bar" id="categoria_bar" class="form-check-input mr-2">Bares 
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-xs-12 col-sm-12 col-md-4">  <br>     
+                            <div class="col-xs-12 col-sm-12 col-md-4">     
                                 <div class="form-check-label">
-                                    <label  class="form-check-label">
-                                        <input type="checkbox" name="categoria_restaurante" id="categoria_restaurante" class="form-check-input mr-2">Restaurantes
-                                    </label>                      
+                                    <div class="form-group">
+                                        <label  class="form-check-label"> 
+                                        <input type="checkbox" name="categoria_restaurante" id="categoria_restaurante" class="form-check-input mr-2">Restaurantes                                              
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-xs-12 col-sm-12 col-md-4"> <br>
+                            <div class="col-xs-12 col-sm-12 col-md-4">
                                 <div class="form-check-label">
-                                    <label  class="form-check-label">
-                                         <input type="checkbox" name="categoria_balialble" id="categoria_bar" class="form-check-input mr-2">Bailables
-                                    </label>                      
+                                    <div class="form-group">
+                                        <label  class="form-check-label">  
+                                        <input type="checkbox" name="categoria_bailable" id="categoria_bar" class="form-check-input mr-2">Bailable                    
+                                        </label>
+                                    </div>
                                 </div>
-                            </div>
+                            </div>               
                         </div>
-                        <br><input type="submit" value="Cargar local"></input>
+                        <button class="btn btn-primary">Cargar local</button>
                     </form>
                 </div>
             </section>
