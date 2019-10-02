@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "utf-8">
+        <title>NightApp</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    </head>
+    <body>
+        <header>
+            <!-- barra de navegación -->
+             <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                         <a class="navbar-brand" href="#">NigthApp</a>
+                          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                          </button>
+                           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                           <ul class="navbar-nav bg-inverse">
+                               <li class="nav-item">
+                                    <a href="index.html" class="nav-link">Inicio</a>
+                                 </li>
+                                 <!-- Este boton tiene que aparecer si el usuario ya ingreso a su cuenta -->
+                                 <li class="nav-item">
+                                     <a href="registroslocales.html" class="nav-link">Registrar local</a>
+                                 </li>
+                                 <li class="nav-item">
+                                     <a href="index.html" class="nav-link">Ayuda</a>
+                                 </li>
+                             </ul>
+                            </div>
+                        </nav>
+                         
+                    </div>
+                </div>
+              <!-- fin de barra de navegación -->
+              <!-- header -->
+                  
+                    <div class="row">
+                        <div class="col-12  header_NightApp">
+                        <p class="header_text">NigthApp</p>
+
+                        </div>
+                    </div>
+                <!-- fin de header -->
+             </div>
+             
+         </header>
+        <div class="container">
+            <section class="main row">
+                <h3>Registra tu local</h3>
+                <hr>
+                <form action="" class="">
+                    <div class="form-group row">
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <div class="form-group">
+                                <label for="nombre_local">Nombre del local</label>
+                                <input type="text" class="form-control" id="nombre_local"></input> 
+                            </div>  
+                        </div>            
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <div class="form-group">
+                                <label for="lugar">Localidad</label>
+                                <Select name="lugar" class="form-control" id="lugar" placeholder="Ubicación del local">
+                                    <option value="caba">CABA</option>
+                                    <option value="florenciovarela">Florencio Varela</option>
+                                    <option value="laplata">La Plata</option>
+                                    <option value="quilmes">Quilmes</option>
+                                </Select>
+                            </div> 
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12"> 
+                            <div class="form-group">
+                                <label for="direccion_local">Dirección del local</label>
+                                <label for="direccion_local" class="sr-only">Ej: 123 e/ 59 y 52</label>
+                                <input type="text" class="form-control" id="direccion_local" placeholder="123 e/ 59 y 52"></input>  
+                            </div>    
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <div class="form-group">
+                                <label for="fotos_local"> Fotos del local</label>
+                                <input name="uploadedfile" class="form-control" id="fotos_local" type="file" />
+                                <p class="help-block">Maximo 50 MB</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <div class="form-group">
+                                <label for="descripcion_local">Descripción del local</label>
+                                <textarea name="descripcion" class="form-control" id="descripcion_local" maxlength="1000" placeholder="Escribe la descripción del local aqui." cols= "50"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <p class="form_text">Categorías</p>
+                            </div>
+                        </div>     <!--            
+                        <div class="form-group row ">
+                            <div class="col-xs-12 col-sm-12 col-md-4">
+                                <div class="form-check-label">
+                                    <div class="form-group">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" name="categoria_bar" id="categoria_bar" class="form-check-input mr-2">Bares 
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4">     
+                                <div class="form-check-label">
+                                    <div class="form-group">
+                                        <label class="form-check-label"> 
+                                            <input type="checkbox" name="categoria_restaurante" id="categoria_restaurante" class="form-check-input mr-2">Restaurantes                                              
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4">
+                                <div class="form-check-label">
+                                    <div class="form-group">
+                                        <label class="form-check-label">  
+                                            <input type="checkbox" name="categoria_bailable" id="categoria_bar" class="form-check-input mr-2">Bailable             
+                                        </label>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>-->
+                        <div class="form-group row px-4">
+                            <div class="col-xs-12 col-sm-12 col-md-4">
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="defaultInline1">
+                                    <label class="custom-control-label" for="defaultInline1">Bares</label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4">
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="defaultInline2">
+                                    <label class="custom-control-label" for="defaultInline2">Restaurantes</label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4">  
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="defaultInline3">
+                                    <label class="custom-control-label" for="defaultInline3">Bailables</label>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <p class="form_text">Servicios</p>
+                            </div>
+                        </div>
+                        <div class="form-group row px-4">
+                            <div class="col-xs-12 col-sm-12 col-md-4">
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="aire">
+                                    <label class="custom-control-label" for="aire">Aire acondicionado</label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4">
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="cerveza_artesanal">
+                                    <label class="custom-control-label" for="cerveza_artesanal">Cerveza artesanal</label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4">  
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="entrada_gratis">
+                                    <label class="custom-control-label" for="entrada_gratis">Entrada gratis</label>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="form-group row px-4">
+                            <div class="col-xs-12 col-sm-12 col-md-4">
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="estacionamiento">
+                                    <label class="custom-control-label" for="estacionamiento">Estacionamiento</label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4">
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="guardarropa">
+                                    <label class="custom-control-label" for="guardarropa">Guardarropa</label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4">  
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="happy_hour">
+                                    <label class="custom-control-label" for="happy_hour">Happy Hour</label>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="form-group row px-4">
+                            <div class="col-xs-12 col-sm-12 col-md-4">
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="jenga">
+                                    <label class="custom-control-label" for="jenga">Jenga</label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4">
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="juegos_mesa">
+                                    <label class="custom-control-label" for="juegos_mesa">Juegos de mesa</label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4">  
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="pool">
+                                    <label class="custom-control-label" for="pool">Pool</label>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="form-group row px-4">
+                            <div class="col-xs-12 col-sm-12 col-md-4">
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="sector_fumador">
+                                    <label class="custom-control-label" for="sector_fumador">Sector fumador</label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4">
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="show">
+                                    <label class="custom-control-label" for="show">Show</label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4">  
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="television">
+                                    <label class="custom-control-label" for="television">Televisión</label>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="form-group row px-4">
+                            <div class="col-xs-12 col-sm-12 col-md-6">
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="tenedor_libre">
+                                    <label class="custom-control-label" for="tenedor_libre">Tenedor libre</label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6">
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="wifi">
+                                    <label class="custom-control-label" for="wifi">Wifi</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--   
+                        <div class="checkbox">
+                            <div class=" form-group row px-4">
+                                <div class="col-xs-12 col-sm-12 col-md-12">
+                                    <div class="form-check-label">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" name="aire" id="aire">Aire acondicionado
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12">                    
+                                    <div class="form-check-label">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" name="cerveza_artesanal" id="cerveza_artesanal">Cerveza artesanal
+                                        </label>                      
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12">        
+                                    <div class="form-check-label">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" name="categoria_boliche" id="categoria_boliche">Entrada gratis
+                                        </label>                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class=" form-group row px-4">
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <div class="form-check-label">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" name="aire" id="aire">Estacionamiento
+                                    </label>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12">                    
+                                    <div class="form-check-label">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" name="cerveza_artesanal" id="cerveza_artesanal">Guardarropa
+                                    </label>                      
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12">        
+                                    <div class="form-check-label">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" name="categoria_boliche" id="categoria_boliche">Happy Hour
+                                    </label>                      
+                                    </div>
+                                </div>
+                            </div>
+                        <div class=" form-group row px-4">
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <div class="form-check-label">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" name="aire" id="aire">Jenga
+                                    </label>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12">                    
+                                    <div class="form-check-label">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" name="cerveza_artesanal" id="cerveza_artesanal">Juegos de mesa
+                                    </label>                      
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12">        
+                                    <div class="form-check-label">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" name="categoria_boliche" id="categoria_boliche">Pool
+                                    </label>                      
+                                    </div>
+                                </div>
+                        </div>
+                        <div class=" form-group row px-4">
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <div class="form-check-label">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" name="aire" id="aire">Sector fumador
+                                    </label>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12">                    
+                                    <div class="form-check-label">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" name="cerveza_artesanal" id="cerveza_artesanal">Show
+                                    </label>                      
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12">        
+                                    <div class="form-check-label">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" name="categoria_boliche" id="categoria_boliche">Televisión
+                                    </label>                      
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="checkbox"> 
+                            <div class=" form-group row px-4">
+                                <div class="col-xs-12 col-sm-12 col-md-12">
+                                <div class="form-check-label">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" name="aire" id="aire">Tenedor libre
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12">                    
+                                    <div class="form-check-label">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" name="cerveza_artesanal" id="cerveza_artesanal">Wifi
+                                        </label>                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row px-4">                           
+                                <div class="col-md-12">
+                                    <p class="form_text">Menu</p>
+                                </div>
+                        </div>
+                        <div class=" form-group row px-4">
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <div class="form-check-label">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" name="aire" id="aire">Celiaco
+                                    </label>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12">                    
+                                    <div class="form-check-label">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" name="cerveza_artesanal" id="cerveza_artesanal">Comida internacional
+                                    </label>                      
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12">        
+                                    <div class="form-check-label">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" name="categoria_boliche" id="categoria_boliche">Comida japonesa
+                                    </label>                      
+                                    </div>
+                                </div>
+                        </div>
+                        <div class=" form-group row px-4">
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <div class="form-check-label">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" name="aire" id="aire">Hamburguesa
+                                    </label>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12">                    
+                                    <div class="form-check-label">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" name="cerveza_artesanal" id="cerveza_artesanal">Parrilla
+                                    </label>                      
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12">        
+                                    <div class="form-check-label">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" name="categoria_boliche" id="categoria_boliche">Pasta
+                                    </label>                      
+                                    </div>
+                                </div>
+                        </div>
+                        <div class=" form-group row px-4">
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <div class="form-check-label">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" name="aire" id="aire">Pizza
+                                    </label>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12">                    
+                                    <div class="form-check-label">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" name="cerveza_artesanal" id="cerveza_artesanal">Vegano
+                                    </label>                      
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12">        
+                                    <div class="form-check-label">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" name="categoria_boliche" id="categoria_boliche">Vegetariano
+                                    </label>                      
+                                    </div>
+                                </div>
+                        </div> -->          
+                    </div>
+                    <div class="col-12 px-4">
+                            <button class="btn btn-primary">Cargar local</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    </body>
+</html>
